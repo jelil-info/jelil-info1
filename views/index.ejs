@@ -1,0 +1,946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html  lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  
+  <title>Jelil Info | Building from ground up</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="Keywords" content="InfoTechCrush, The home of building from ground up"/>
+  <meta name="author" content="Oyekanmi Oyetunji"/>
+  <meta name="refresh" content="30"/>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <script src="https://kit.fontawesome.com/40c559f4dd.js"></script>
+
+  <!-- CSS -->
+	<!-- load bootstrap and our own personal stylesheet -->
+	
+	<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+
+<body onload="typeWriter()" onscroll="typeWriter2()">
+  
+     <header id="home">
+       <div class="intro">
+        <span id="myIntro" class="myIntro"></span><br>
+        <span id="myIntro2" class="myIntro2"></span>
+
+           <div class="myWork" style= "vertical-align: middle;">
+           <a class="view" href="#navbar1"><span>view my work</span></a><br>
+           </div>
+       </div>
+     </header>
+    <p id="navbar1"></p>
+    <nav id="navbar" class="show-nav">
+    <ul class="topnav hidden fade-in-element">
+    <li><a class="activeNav" href="/home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#portfolio">PORTFOLIO</a></li>
+    <li><a href="/myResume">RESUME</a></li>
+    <li><a href="#news">INFOTECH NEWS</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+    <li  style="float: right;"><span class="myIcon">JelilInfo</span></li>
+    </ul>
+    </nav>
+
+  <nav class="hide-nav hidden fade-in-element">
+    <div  class="myIcon2" style="float: right;"><span>JelilInfo</span></div>
+    <div class="dropdown" onclick="myFunction()">
+    <div  class="dropbtn" style="font-size: 20px;">&#x2630<br>Menu</div>
+    
+     <div id="myDropdown" class="dropdown-content">
+      <li><a class="activeNav" href="/home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="/myResume">RESUME</a></li>
+      <li><a href="#news">INFOTECH NEWS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+     </div>
+    </div>
+  </nav>
+  
+  
+      <section>
+        
+
+      <div class="about hidden fade-in-element"> 
+       <div  class="aboutLine">ABOUT</div><hr class="aboutLine"/>
+      </div>
+       
+       <div class="aboutIcon" style="background-color: crimson;"></div>
+         
+       <div class="responsiveIcon">
+          <div class="galleryIcon">
+            <i class="fa fa-desktop icon"></i>
+              <div class="explainIcon"> 
+               <h3>Responsive</h3>
+                <p>I ensure all-device website responsiveness, especially mobile friendliness during design and development.</p>
+          </div>
+        </div>
+       </div>
+  
+        <div class="responsiveIcon">
+          <div class="galleryIcon">
+           <i class="fa fa-heart icon"></i>
+            <div class="explainIcon">
+             <h3>Passion</h3>
+              <p>It is my passion to convert your ideas into visual concepts.</p>
+             </div>
+          </div>
+        </div>
+
+        <div class="responsiveIcon">
+          <div class="galleryIcon">
+           <i class="fa fa-diamond icon"></i>
+            <div class="explainIcon">
+             <h3>Design and Development</h3>
+        <p>I build beautiful custom websites with clean codes of JavaScript, HTML, CSS and Node.js</p>
+            </div>
+          </div>
+        </div>
+
+       <div class="responsiveIcon">
+          <div class="galleryIcon">
+            <i class="fa fa-cog icon"></i>      
+             <div class="explainIcon">
+               <h3>Support</h3>
+                 <p>I develop simple, unique and easily navigable websites that take lesser time to load while giving clear idea to visitors about the central theme of the page.</p>
+             </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      
+      </section>
+    
+      <section id="about" class="flexMe hidden fade-in-element">
+  
+        <div class="briefMe">
+          <div class="briefMePic">
+            <img src="/jelil.jpg" alt="my picture" style="width: 35%; margin-left: auto; margin-right: auto;">
+             <div class="briefMeText">
+               <h2>Who's this guy?</h2>
+                 <p>I am a frontend and backend websites developer. 
+                   I also get involved in electrical and electronic <span id="dots">......</span>
+                   <span id="more">
+                    fields as I have experience in building automatic 
+                    change over Inverters. I am aspiring to be a multilingual as I am currently learning
+                    arabic language as my third language.<br>
+                    MSC grad in solid state physics.
+                   </span></p>
+                  <button onclick="myFunction3()" id="myBtn">Read more</button>
+
+             </div>
+          </div>
+        </div>
+    
+        <div class="main" style="margin-top: 30px;">
+          
+          <div class="progressBar">
+               <div class="title javascriptColor">JavaScript</div>
+               <div id="progress1" class="javascriptProgress1 html"></div>
+               <div class="progressValue">80%</div>
+          </div>
+ 
+          <div class="progressBar">
+               <div class="title html5Color">HTML5</div>
+               <div id="progress2" class="html5Progress2 css"></div>
+               <div class="progressValue">90%</div>
+          </div>
+ 
+         <div class="progressBar">
+               <div class="title css3Color">CSS3</div>
+               <div id="progress3" class="css3Progress3 js"></div>
+               <div class="progressValue">90%</div>
+         </div>
+ 
+         <div class="progressBar">
+               <div class="title nodejsColor">Node.js</div>
+               <div id="progress4" class="nodejsProgress4 nodejs"></div>
+               <div class="progressValue">70%</div>
+         </div>
+ 
+         <div class="progressBar">
+               <div class="title angularjsColor">Angularjs</div>
+               <div id="progress5" class="angularjsProgress5 angularjs"></div>
+               <div class="progressValue">70%</div>
+         </div>
+
+         <div class="progressBar">
+                <div class="title bootstrap4Color">Bootstrap4</div>
+                <div id="progress6" class="bootstrap4Progress6 reactjs"></div>
+                <div class="progressValue">90%</div>
+         </div>
+
+         <div class="progressBar">
+          <div class="title reactjsColor">Reactjs</div>
+          <div id="progress7" class="reactjsProgress7 vuejs"></div>
+          <div class="progressValue">70%</div>
+        </div>
+
+        <div class="progressBar">
+          <div class="title vuejsColor">Vuejs</div>
+          <div id="progress8" class="vuejsProgress8 digital"></div>
+          <div class="progressValue">70%</div>
+        </div>
+      </div>
+    </section>
+  
+
+    <section id="portfolio" class="main1">
+      <div class="main2 hidden fade-in-element">
+    
+  
+      
+      
+      <div class="portfolio">PORTFOLIO</div><hr class="portfolioLine"/>
+      
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('JavaScript')">JavaScript</button>
+        <button class="btn" onclick="filterSelection('Angularjs')">Angularjs</button>
+        <button class="btn" onclick="filterSelection('Reactjs')">Reactjs</button>
+        <button class="btn" onclick="filterSelection('Vuejs')">Vuejs</button>
+      </div>
+      
+      
+
+      
+        
+        <div class="column JavaScript">
+          <div class="content">
+    
+            <a target="_blank" href="img_5terre.jpg">
+    
+            <img src="/b.jpg" 
+            alt="Cinque Terre" width="100%" height="auto">
+    
+            </a>
+         <div class="desc">
+    
+            <p>JavaScript Project</p>
+            <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
+          
+          </div>
+    
+          </div>
+      </div>
+    
+      <div class="column JavaScript">
+        <div class="content">
+    
+          <a target="_blank" href="img_5terre.jpg">
+    
+          <img src="/b.jpg" 
+          alt="Cinque Terre" width="100%" height="auto">
+    
+          </a>
+       <div class="desc">
+    
+          <p>JavaScript Project</p>
+          <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
+        
+        </div>
+    
+        </div>
+    </div>
+    
+    
+    
+    <div class="column Angularjs">
+      <div class="content">
+    
+        <a target="_blank" href="img_5terre.jpg">
+    
+        <img src="/b.jpg" 
+        alt="Cinque Terre" width="100%" height="auto">
+    
+        </a>
+     <div class="desc">
+    
+        <p>Angularjs Project</p>
+        <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
+      
+      </div>
+    
+      </div>
+    </div>
+    
+    
+    <div class="column Angularjs">
+          <div class="content">
+    
+            <a target="_blank" href="img_5terre.jpg">
+    
+            <img src="/b.jpg" 
+            alt="Cinque Terre" width="100%" height="auto">
+    
+            </a>
+         <div class="desc">
+    
+            <p>Angularjs Project</p>
+            <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
+          
+          </div>
+    
+          </div>
+      </div>
+    
+      <div class="column Reactjs">
+        <div class="content">
+    
+          <a target="_blank" href="img_5terre.jpg">
+    
+          <img src="/b.jpg" 
+          alt="Cinque Terre" width="100%" height="auto">
+    
+          </a>
+       <div class="desc">
+    
+          <p>Reactjs Project</p>
+          <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
+        
+        </div>
+    
+        </div>
+    </div>
+    
+    
+    <div class="column Reactjs">
+      <div class="content">
+    
+        <a target="_blank" href="img_5terre.jpg">
+    
+        <img src="/b.jpg" 
+        alt="Cinque Terre" width="100%" height="auto">
+    
+        </a>
+     <div class="desc">
+    
+        <p>Reactjs Project</p>
+        <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
+      
+      </div>
+    
+      </div>
+    </div>
+    
+    
+    <div class="column  Vuejs">
+      <div class="content">
+    
+        <a target="_blank" href="img_5terre.jpg">
+    
+        <img src="/b.jpg" 
+        alt="Cinque Terre" width="100%" height="auto">
+    
+        </a>
+     <div class="desc">
+    
+        <p>Vuejs Project</p>
+        <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
+      
+      </div>
+    
+      </div>
+    </div>
+    
+    
+    <div class="column Vuejs">
+      <div class="content">
+    
+        <a target="_blank" href="img_5terre.jpg">
+    
+        <img src="/b.jpg" 
+        alt="Cinque Terre" width="100%" height="auto">
+    
+        </a>
+     <div class="desc">
+    
+        <p>Vuejs Project</p>
+        <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
+      
+      </div>
+    
+      </div>
+    </div>
+    
+   
+    
+        
+        
+    <div class="clearfix4"></div>
+       
+      
+  </div>
+      
+    
+      </section>
+  
+    
+    
+    <section id="news" style="margin-top: 600px;">
+      <div  class="infoNews hidden fade-in-element" style="text-align: center;">InfoTech News</div><hr class="infoNewsLine"/>
+      
+      <div  class="slideContainerA slideContainerB">
+
+        <div class="slideShows fadeSlide slideContent slideSection">
+        <div class="topAnimate">
+        <div class="slideOrder">1 / 4</div>
+        <a href="#home" target="_blank">
+        <img class="slideLink" 
+        src="/82.jpg" 
+        style="width:100%">
+        </a>
+        <div class="slideText">Caption Text</div>
+        </div>
+        </div>
+        
+        <div class="slideShows fadeSlide slideContent slideSection">
+        <div class="bottomAnimate">
+        <div class="slideOrder">2 / 4</div>
+        <a href="#home" target="_blank">
+        <img class="slideLink" 
+        src="/83.jpg" 
+        style="width:100%">
+        </a>
+        <div class="slideText">Caption Two</div>
+        </div>
+        </div>
+        
+        <div class="slideShows fadeSlide slideContent slideSection">
+        <div class="topAnimate">
+        <div class="slideOrder">3 / 4</div>
+        <a href="#home" target="_blank">
+        <img class="slideLink" 
+        src="/Amphi Theatre.jpg" 
+        style="width:100%">
+        </a>
+        <div class="slideText">Caption Three</div>
+        </div>
+        </div>
+        
+        <div class="slideShows fadeSlide slideContent slideSection">
+        <div class="bottomAnimate">
+        <div class="slideOrder">4 / 4</div>
+        <a href="#home" target="_blank">
+        <img class="slideLink" 
+        src="/5.jpg" 
+        style="width:100%">
+        </a>
+        <div class="slideText">Caption Four</div>
+        </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+        
+        
+        </div>
+        <br>
+        <div style="text-align:center">
+        <span class="slideIndicator" onclick="currentSlide(1)"></span>
+        <span class="slideIndicator" onclick="currentSlide(2)"></span>
+        <span class="slideIndicator" onclick="currentSlide(3)"></span>
+        <span class="slideIndicator" onclick="currentSlide(3)"></span>
+        </div>
+
+    </section>
+
+    <section id="contact" style="background-color:#000033;">
+      
+      <div class="formField hidden fade-in-element">
+
+    <!-- Contact Section -->
+    
+    <svg preserveAspectRatio="none" style="background-color: #000033;" viewBox="0 0 100 102" height="75" width="100%" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+          <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+        </svg>
+
+        
+<div class="formContainer formGrey" style="padding:128px 16px;">
+  
+  <h3 class="formCenter">CONTACT</h3><hr class="formCenterLine"/>
+  <p class="formCenter formLarge">Let me get in touch. Send me a message:</p>
+  
+  <div  style="margin-top:48px">
+    <div class="directContact">
+    <p><i class="fa fa-map-marker fa-fw formxxlarge formMarginRight"></i> Ibadan, Nigeria</p>
+    <p><i class="fa fa-phone fa-fw formxxlarge formMarginRight"></i> Phone: 07030786761</p>
+    <p><i class="fa fa-envelope fa-fw formxxlarge formMarginRight"> </i> Email: Oyekanmijelili@gmail.com</p>
+    <br>
+    </div>
+    <form method="get" action="/foods">
+      <label>Enter Your Name</label><br>
+      <input type="text" name="firstName" placeholder="Enter first name..." required>
+      <input type="text" name="lastName" placeholder="Enter last name..." required>
+      <input type="submit" value="Add Name">
+  </form><br>
+
+    
+    <form method="POST" action="/food" id="myForm" autocomplete="on"   target="_blank">
+      <p><input class="formInput formBorder" type="email"  placeholder="Email" required name="email"  id="email"></p>
+      <p><input class="formInput formBorder" type="text"  placeholder="Name" required name="name"  id="subject"></p>
+      <p><textarea  class="formInput formBorder" type="text" 
+        placeholder="Your Message" required  name="text" id="text" cols="30" rows="10">
+      </textarea></p>
+      <p>
+        <button class="formButton formBlack" type="submit" value="Submit" id="submitForm">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE           
+        </button>
+      </p>
+      <p id="demo"></p>
+    </form>
+
+  </div>
+</div>
+</div>
+    </section>
+
+    
+
+  
+    <!-- Footer -->
+<footer class="footerCenter footerBlack footerPadding">
+  <a href="#home" class="footerButton footerGrey hidden fade-in-element"><i class="fa fa-arrow-up footerRight"></i>To the top</a>
+  <div class="footerLarge footerSection">
+    <i class="fa fa-facebook-official footerOpacity"></i>
+    <i class="fa fa-instagram footerOpacity"></i>
+    <i class="fa fa-snapchat footerOpacity"></i>
+    <i class="fa fa-pinterest-p footerOpacity"></i>
+    <i class="fa fa-twitter footerOpacity"></i>
+    <i class="fa fa-linkedin footerOpacity"></i>
+  </div>
+  <p>Powered by <a href="#home" title="W3.CSS" target="_blank" class="footerGreen">Jelil Info</a></p>
+</footer>
+
+<div class="fade-in-element hidden">
+  
+    “Branding Yourself is a good beginner’s guide on how to build an online presence using
+  social networks and blogs that will turn you into a thought leader or expert or just get
+  you a job.”
+  —Dan Schawbel, #1 International Bestselling Author of Me 2.0
+  “The biggest problem most people have with embracing the power of online networking
+  and personal brand building is they don’t know where to start. Erik Deckers and
+  Kyle Lacy take out the guesswork and roll the dice with platforms to find the right
+  combination for you in this book. The book is a recipe for success...your success.”
+  —Jason Falls, SocialMediaExplorer.com
+  “In this exceedingly useful book, Erik Deckers and Kyle Lacy provide step-by-step
+  guidance for building and maintaining powerful personas. With wit, wisdom, and
+  numerous expert tips, Branding Yourself is the new roadmap for navigating the sometimes
+  complex world of personal branding. If your best marketing plan is you (and it
+  is), then Branding Yourself should be your playbook.”
+  —Jay Baer, Coauthor of The NOW Revolution:
+  7 Shifts to Make Your Business Faster, Smarter, and More Social
+  “Our parents taught us to find a great job with benefits, put money toward retirement,
+  buy a home, and work hard, and you’ll reap the benefits. Our parents were wrong. The
+  job market was downsized; the retirement account was ransacked; the house lost its
+  value; and working hard has only put you in the unemployment line. Those who personally
+  branded themselves were able to capitalize on the down-turned economy, and
+  their busi
+  </div>
+        <time><p>
+          “Branding Yourself is a good beginner’s guide on how to build an online presence using
+social networks and blogs that will turn you into a thought leader or expert or just get
+you a job.”
+—Dan Schawbel, #1 International Bestselling Author of Me 2.0
+“The biggest problem most people have with embracing the power of online networking
+and personal brand building is they don’t know where to start. Erik Deckers and
+Kyle Lacy take out the guesswork and roll the dice with platforms to find the right
+combination for you in this book. The book is a recipe for success...your success.”
+—Jason Falls, SocialMediaExplorer.com
+“In this exceedingly useful book, Erik Deckers and Kyle Lacy provide step-by-step
+guidance for building and maintaining powerful personas. With wit, wisdom, and
+numerous expert tips, Branding Yourself is the new roadmap for navigating the sometimes
+complex world of personal branding. If your best marketing plan is you (and it
+is), then Branding Yourself should be your playbook.”
+—Jay Baer, Coauthor of The NOW Revolution:
+7 Shifts to Make Your Business Faster, Smarter, and More Social
+“Our parents taught us to find a great job with benefits, put money toward retirement,
+buy a home, and work hard, and you’ll reap the benefits. Our parents were wrong. The
+job market was downsized; the retirement account was ransacked; the house lost its
+value; and working hard has only put you in the unemployment line. Those who personally
+branded themselves were able to capitalize on the down-turned economy, and
+their businesses exploded. Erik Deckers and Kyle Lacy are providing you the blueprint
+for kicking off your brand and effectively leveraging online technologies to transform
+your future. [This book is] a must read.”
+—Douglas Karr, Founder of the Marketing Technology blog,
+CEO of DK New Media,
+and Author of Corporate Blogging for Dummies
+“In an environment filled with philosophy, platitudes, and ‘30,000-foot views,’ Erik
+Deckers and Kyle Lacy give us a refreshing how-to guide for actually doing something
+meaningful through social media. Here’s a trustworthy book to help you (and me) take
+real action to leverage emerging tools to create customers and make them happy!”
+—Trey Pennington, Entrepreneur, Story Prospector,
+Author of Spitball Marketing</p>
+
+          <p>
+          “Branding Yourself is a good beginner’s guide on how to build an online presence using
+          social networks and blogs that will turn you into a thought leader or expert or just get
+          you a job.”
+          —Dan Schawbel, #1 International Bestselling Author of Me 2.0
+          “The biggest problem most people have with embracing the power of online networking
+          and personal brand building is they don’t know where to start. Erik Deckers and
+          Kyle Lacy take out the guesswork and roll the dice with platforms to find the right
+          combination for you in this book. The book is a recipe for success...your success.”
+          —Jason Falls, SocialMediaExplorer.com
+          “In this exceedingly useful book, Erik Deckers and Kyle Lacy provide step-by-step
+          guidance for building and maintaining powerful personas. With wit, wisdom, and
+          numerous expert tips, Branding Yourself is the new roadmap for navigating the sometimes
+          complex world of personal branding. If your best marketing plan is you (and it
+          is), then Branding Yourself should be your playbook.”
+          —Jay Baer, Coauthor of The NOW Revolution:
+          7 Shifts to Make Your Business Faster, Smarter, and More Social
+          “Our parents taught us to find a great job with benefits, put money toward retirement,
+          buy a home, and work hard, and you’ll reap the benefits. Our parents were wrong. The
+          job market was downsized; the retirement account was ransacked; the house lost its
+          value; and working hard has only put you in the unemployment line. Those who personally
+          branded themselves were able to capitalize on the down-turned economy, and
+          their businesses exploded. Erik Deckers and Kyle Lacy are providing you the blueprint
+          for kicking off your brand and effectively leveraging online technologies to transform
+          your future. [This book is] a must read.”
+          —Douglas Karr, Founder of the Marketing Technology blog,
+          CEO of DK New Media,
+          and Author of Corporate Blogging for Dummies
+          “In an environment filled with philosophy, platitudes, and ‘30,000-foot views,’ Erik
+          Deckers and Kyle Lacy give us a refreshing how-to guide for actually doing something
+          meaningful through social media. Here’s a trustworthy book to help you (and me) take
+          real action to leverage emerging tools to create customers and make them happy!”
+          —Trey Pennington, Entrepreneur, Story Prospector,
+          Author of Spitball Marketing</p>
+          
+        </time>--> 
+  
+  
+        
+    <script>
+          
+         
+
+        
+        
+        
+      
+  /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+
+  
+
+
+
+
+
+    
+ 
+      
+
+    
+var i = 0;
+function onScrollSkill() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("progress1");
+    var width = 1;
+    var id = setInterval(frame, 20);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("slideShows");
+var dots = document.getElementsByClassName("slideIndicator");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+var myIndex = 0;
+carousel();
+function carousel() {
+var i;
+var x = document.getElementsByClassName("slideShows");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 3000);
+}
+
+function validForm() {
+var x = document.forms["myForm"]["email"].value;
+if(x == "") {
+  alert("Email must be filled out");
+  return false;
+}
+}
+
+
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show1");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show1");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+var i = 0;
+var a = " Hello, I am Oyekanmi Oyetunji.";
+var b = "I am a full-stack Javascript Programmer.";
+var txt = a+"           " +b;
+var speed = 100;
+
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("myIntro").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+/*var j = 0;
+var txt2 = " I am a full-stack Javscript Programmer.";
+var speed2 = 500;
+
+function typeWriter2() {
+  if (j < txt2.length) {
+    document.getElementById("myIntro2").innerHTML += txt2.charAt(j);
+    j++;
+    setTimeout(typeWriter2, speed2);
+  }
+}*/
+
+
+
+(function() {
+  var elements;
+  var windowHeight;
+
+ function init() {
+    elements = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+  }
+
+  function checkPosition() {
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= 0) {
+        element.classList.add('fade-in-element');
+        element.classList.remove('hidden');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+
+  init();
+  checkPosition();
+})();
+
+
+
+function myFunction3() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+/*//id="submitForm"
+const el = document.getElementById("submitForm");
+      if (el) {
+        el.addEventListener('click', addRecipe);
+        console.log('Step 1');
+      }
+
+
+      function addRecipe(e) {
+        
+        const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const text = document.getElementById("text").value.trim();
+        var recipe = {
+            email,
+        subject,
+        text
+        };
+
+        console.log('step 2')
+
+        let xml = new XMLHttpRequest();
+        xml.open("POST", "/email", true);
+        //Specify the type of data to be sent
+        xml.setRequestHeader("Content-type", "application/json; charset=utf-8");
+        xml.send(JSON.stringify(recipe));
+        console.log('step 3');
+        }*/
+
+
+        /*function loadDoc() {
+  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("myForm").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}*/
+
+/*function ajaxpost(){
+  // (A) GET FORM DATA
+  var data = new FormData();
+  data.append("email", document.getElementById("email").value);
+  data.append("name", document.getElementById("subject").value);
+  data.append("text", document.getElementById("text").value);
+ 
+  // (B) AJAX
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "server.js");
+  // What to do when server responds
+  xhr.onload = function(){ console.log(this.response); };
+  xhr.send(data);
+ 
+  // (C) PREVENT HTML FORM SUBMIT
+  return false;
+}*/
+
+
+
+
+/*document.getElementById("submitForm").addEventListener("click", function() {
+       
+// Creating "h2" element
+var H = document.createElement("p");
+
+ //Retaining id
+H.setAttribute("id", "email");
+
+// Creating Text node		
+var txt = document.createTextNode("Hello Geeks!!");
+
+// Accessing the Element we want to replace
+var repNode = document.getElementById("myForm");
+
+// Appending Text Node in Element
+H.appendChild(txt);
+
+// Replacing one element with another
+myForm.replaceChild(H, myForm.childNodes[3]);
+
+
+
+     });*/
+    
+</script>
+
+
+    
+  
+
+
+</body>
+
+</html>

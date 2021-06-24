@@ -1,0 +1,18 @@
+{
+  "name": "a",
+  "description": "Our sample Node to Heroku app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "~1.0.0",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.5",
+    "nodemailer": "^6.4.18",
+    "nodemailer-mailgun-transport": "^2.0.2"
+  }
+}
