@@ -78,40 +78,6 @@ app.get('/Thanks',function(req,res){
 
 
 
-//CODES FOR FORM DATA
-
-//const express = require("express");
-const mongoose = require("mongoose");
-const foodRouter = require("./routes/foodRoutes.js");
-//const app = express();
-
-//app.use(express.json());
-var bodyParser = require('body-parser')
-app.use(bodyParser.urlencoded({ extended: false }));
-
-
-
-
-        
-        var path = require('path');
-        
-        var mongodb = require('mongodb');
-        var fs = require('fs');
-        var path = require('path');
-        require('dotenv/config');
-
-
-
-        
-        mongoose.Promise = global.Promise;
-        
-
-    mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
-     { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false }
-  
-);
-
-app.use(foodRouter);
 
 app.listen(8080, () => {
   console.log("Server is running...");
