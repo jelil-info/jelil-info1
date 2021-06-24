@@ -33,7 +33,7 @@ const log = console.log;
 
 const path = require('path');
 
-const PORT = 8080;
+const PORT = 3000;
 
 
 // Chunk 2
