@@ -111,8 +111,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
           accessKeyId: process.env.S3_KEY,
           secretAccessKey: process.env.S3_SECRET
         });*/
-        const uri = process.env.MONGODB_URI;
-        mongoose.connect(`mongodb+srv://uri@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
+        //const uri = process.env.MONGODB_URI;
+
+        mongoose.connect(`mongodb+srv://${process.env.MONGODB_URI}@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
         { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false }
         );
          
