@@ -105,21 +105,22 @@ app.use(bodyParser.urlencoded({ extended: false }));
         
         mongoose.Promise = global.Promise;
         
-        const aws = require('aws-sdk');
+        /*const aws = require('aws-sdk');
 
-        /*let s3 = new aws.S3({
+        let s3 = new aws.S3({
           accessKeyId: process.env.S3_KEY,
           secretAccessKey: process.env.S3_SECRET
-        });
-        
-        mongoose.connect(`mongodb+srv://${accessKeyId}:${secretAccessKey}@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
-        { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false }*/
+        });*/
+        const uri = process.env.MONGODB_URI;
+        mongoose.connect(`mongodb+srv://uri@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
+        { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false }
+        );
          
 
-    mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
+    /*mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
      { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false }
   
-);
+);*/
 
 app.use(foodRouter);
 
