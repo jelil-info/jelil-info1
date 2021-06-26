@@ -6,6 +6,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "aws-sdk": "^2.935.0",
     "dotenv": "^8.2.0",
     "ejs": "~1.0.0",
     "express": "^4.17.1",
