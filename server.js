@@ -38,21 +38,27 @@ var http = require('http').Server(app);
 //res.sendfile(link of html file in your pc)
 
 app.get('/',function(req,res){ 
-  res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/index');
+  res.sendFile('views/index' , { root : __dirname});
+  //res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/index');
 });
 app.get('/download',function(req,res){
     res.download(__dirname +'/upload_folder/cv.pdf','cv.pdf');
 });
 
 app.get('/Thanks',function(req,res){
-    res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/thanksForDownloading.html')//Full path of thankyou.html file
+  res.sendFile('public/thanksForDownloading.html' , { root : __dirname});
+
+  //res.sendFile('jelil-info1/public/thanksForDownloading.html', {root: path.dirname(__dirname)}); 
+   //res.sendFile('../public/thanksForDownloading.html', {root: __dirname});
+    //res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/thanksForDownloading.html')//Full path of thankyou.html file
     });
 
 
     //CODES FOR LINKS
     app.get('/home', (req, res) => {
 
-      res.render('C:/Users/Oyekanmi Jelil/jelil-info1/views/home');
+      res.render('home');
+      
       
       });
     
@@ -115,10 +121,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
         mongoose.connect(`mongodb+srv://${s3.accessKeyId}:${s3.secretAccessKey}@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
         { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false }
         );*/
-        
-        const uri = process.env.MONGODB_URI;
+         
 
-    mongoose.connect(uri,{ useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false });
+    mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
+     { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false }
+  
+);
 
 app.use(foodRouter);
 
