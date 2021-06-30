@@ -23,7 +23,7 @@ app.post("/food", async (request, response) => {
     await food.save();
     //response.send(food);
     //response.send("Name saved to database");
-    response.sendFile(path.join(__dirname, '/thanksForDownloading.html'));
+    response.sendFile(path.join(__dirname, '/thanksForSending.html'));
      
   } catch (error) {
     response.status(500).send(error);

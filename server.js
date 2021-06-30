@@ -45,13 +45,13 @@ app.get('/download',function(req,res){
     res.download(__dirname +'/upload_folder/cv.pdf','cv.pdf');
 });
 
-app.get('/Thanks',function(req,res){
+/*app.get('/Thanks',function(req,res){server
   res.sendFile('public/thanksForDownloading.html' , { root : __dirname});
 
   //res.sendFile('jelil-info1/public/thanksForDownloading.html', {root: path.dirname(__dirname)}); 
    //res.sendFile('../public/thanksForDownloading.html', {root: __dirname});
     //res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/thanksForDownloading.html')//Full path of thankyou.html file
-    });
+    });*/
 
 
     //CODES FOR LINKS
@@ -68,9 +68,10 @@ app.get('/Thanks',function(req,res){
         
         });
     //COdes for message to display after downloading
-        app.get('/Thanks', (req, res) => {
-    
-          res.render('thanksForDownloading.html');
+        
+         app.get('/Thanks', (req, res) => {
+         
+          res.render('thanksForDownloading');
           
           });
 

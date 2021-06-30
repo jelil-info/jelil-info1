@@ -20,29 +20,40 @@
   <!-- CSS -->
 	<!-- load bootstrap and our own personal stylesheet -->
 	
-	<link rel="stylesheet" href="css/style.css">
+	
 
-
+<style>
+.btn_download {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+</style>
 </head>
 
 
 
 <body>
   
-     <header id="home">
-       <div class="intro">
-        <span id="myIntro" class="myIntro"></span><br>
-        <span id="myIntro2" class="myIntro2"></span>
+     <div id="CV">
+           
+       
+       
+    
+      <button id = "btn_download">Click on me to download Jelil-Info's Resume</button>
 
-           <div class="myWork" style= "vertical-align: middle;">
-           <a class="view" href="#navbar1"><span>view my work</span></a><br>
-           </div>
-       </div>
-     </header>
-    <p id="navbar1"></p>
-    <nav id="navbar" class="show-nav">
-      <button id = "btn_download">Download</button>
-
+    </div>
+    
       <script>//CODES FOR DOWNLOADING FROM SERVER 
     document.getElementById("btn_download").addEventListener("click", function() {
        
