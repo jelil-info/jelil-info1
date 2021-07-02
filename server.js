@@ -38,21 +38,27 @@ var http = require('http').Server(app);
 //res.sendfile(link of html file in your pc)
 
 app.get('/',function(req,res){ 
-  res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/index');
+  res.sendFile('views/index' , { root : __dirname});
+  //res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/index');
 });
 app.get('/download',function(req,res){
     res.download(__dirname +'/upload_folder/cv.pdf','cv.pdf');
 });
 
-app.get('/Thanks',function(req,res){
-    res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/thanksForDownloading.html')//Full path of thankyou.html file
-    });
+/*app.get('/Thanks',function(req,res){server
+  res.sendFile('public/thanksForDownloading.html' , { root : __dirname});
+
+  //res.sendFile('jelil-info1/public/thanksForDownloading.html', {root: path.dirname(__dirname)}); 
+   //res.sendFile('../public/thanksForDownloading.html', {root: __dirname});
+    //res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/thanksForDownloading.html')//Full path of thankyou.html file
+    });*/
 
 
     //CODES FOR LINKS
     app.get('/home', (req, res) => {
 
-      res.render('C:/Users/Oyekanmi Jelil/jelil-info1/views/home');
+      res.render('home');
+      
       
       });
     
@@ -62,9 +68,10 @@ app.get('/Thanks',function(req,res){
         
         });
     //COdes for message to display after downloading
-        app.get('/Thanks', (req, res) => {
-    
-          res.render('thanksForDownloading.html');
+        
+         app.get('/Thanks', (req, res) => {
+         
+          res.render('thanksForDownloading');
           
           });
 
