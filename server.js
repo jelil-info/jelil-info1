@@ -38,8 +38,8 @@ var http = require('http').Server(app);
 //res.sendfile(link of html file in your pc)
 
 app.get('/',function(req,res){ 
-  res.sendFile('views/index' , { root : __dirname});
-  //res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/index');
+  //res.sendFile('views/index' , { root : __dirname});
+  res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/index');
 });
 app.get('/download',function(req,res){
     res.download(__dirname +'/upload_folder/cv.pdf','cv.pdf');
@@ -124,7 +124,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
         );*/
          
 
-    mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
+    mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.8chyx.mongodb.net/FormData3?retryWrites=true&w=majority`,
      { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false }
   
 );
