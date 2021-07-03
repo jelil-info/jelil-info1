@@ -112,6 +112,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
         
         mongoose.Promise = global.Promise;
         
+
+        var data = process.env.MONGODB_URI;
+        mongoose.connect(data, { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false });
+
+
+        /*mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.8chyx.mongodb.net/FormData?retryWrites=true&w=majority`,
+     { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false });*/
+
+        
         /*const aws = require('aws-sdk');
 
         let s3 = new aws.S3({
@@ -124,11 +133,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
         );*/
          
 
-    mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.8chyx.mongodb.net/FormData3?retryWrites=true&w=majority`,
-     { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false }
-  
-);
-
+    
 app.use(foodRouter);
 
 app.listen(port, () => {
