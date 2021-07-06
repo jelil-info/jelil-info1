@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 app.get("/forms", async (request, response) => {
-  const foods = await foodModel.find({});
+  const forms = await foodModel.find({});
 
   try {
     response.send(forms);
