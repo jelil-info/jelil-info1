@@ -89,7 +89,7 @@ app.get('/download',function(req,res){
 
 //const express = require("express");
 const mongoose = require("mongoose");
-const foodRouter = require("./routes/foodRoutes.js");
+const formRouter = require("./routes/formRoutes.js");
 //const app = express();
 
 //app.use(express.json());
@@ -134,7 +134,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
          
 
     
-app.use(foodRouter);
+app.use(formRouter);
 
 app.listen(port, () => {
   console.log("Server is running...");
