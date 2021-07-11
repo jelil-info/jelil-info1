@@ -42,7 +42,7 @@ app.get('/',function(req,res){
   res.sendFile('C:/Users/Oyekanmi Jelil/jelil-info1/views/index');
 });
 app.get('/download',function(req,res){
-    res.download(__dirname +'/upload_folder/cv.pdf','myCV.pdf');
+    res.download(__dirname +'/upload_folder/myCV.pdf','myCV.pdf');
 });
 
 /*app.get('/Thanks',function(req,res){server
