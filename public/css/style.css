@@ -28,7 +28,7 @@ text-align: center;
 .myIntro {
   
   padding: 10px;
-  color: #ff6666;;                      
+  color: #ff6666;                      
   max-width: 1000px;
   margin: auto;
   height: 200px;
@@ -218,7 +218,7 @@ ul.topnav li a:hover:not(.active) {
 }
 
 ul.topnav li a.active {
-  background-color: #ff9999;;
+  background-color: #ff9999;
 }
 
 
