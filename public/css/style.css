@@ -903,6 +903,16 @@ opacity: .6;
   display: block;
 }
 
+#myBtnContainer {
+  
+  
+  
+  /*padding: 15px;
+  border: 5px solid red;
+  background-color: green;*/
+
+}
+
 /* Style the buttons */
 .btn {
   border: 1px dashed  #ff6666;
@@ -914,6 +924,13 @@ opacity: .6;
   font-variant: small-caps;
   color:   black;
   border-radius: 8px;
+
+  
+  margin: 10px;
+  /*float: left;
+  display: block;
+  padding: 14px 16px;
+  overflow: hidden;*/
 }
 
 .btn:hover {
