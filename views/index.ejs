@@ -128,7 +128,7 @@
             <img src="/jelil.jpg" alt="my picture" style="width: 35%; margin-left: auto; margin-right: auto;">
              <div class="briefMeText">
                <h2>Who's this guy?</h2>
-                 <p>I am a frontend and backend websites developer. 
+                 <p>I am a <a class="myProfile" href="/myResume" target="_blank"><i>frontend and backend websites developer.</i></a></a> 
                    I also get involved in electrical and electronic <span id="dots">......</span>
                    <span id="more">
                     fields as I have experience in building automatic 
@@ -169,13 +169,13 @@
          </div>
  
          <div class="progressBar">
-               <div class="title angularjsColor">Angularjs</div>
+               <div class="title angularjsColor">Angular</div>
                <div id="progress5" class="angularjsProgress5 angularjs"></div>
                <div class="progressValue">70%</div>
          </div>
 
          <div class="progressBar">
-                <div class="title bootstrap4Color">Bootstrap4</div>
+                <div class="title bootstrap4Color">Bootstrap</div>
                 <div id="progress6" class="bootstrap4Progress6 reactjs"></div>
                 <div class="progressValue">90%</div>
          </div>
@@ -206,7 +206,7 @@
       <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
         <button class="btn" onclick="filterSelection('JavaScript')">JavaScript</button>
-        <button class="btn" onclick="filterSelection('Angularjs')">Angularjs</button>
+        <button class="btn" onclick="filterSelection('Angularjs')">Angular</button>
         <button class="btn" onclick="filterSelection('Reactjs')">Reactjs</button>
         <button class="btn" onclick="filterSelection('Vuejs')">Vuejs</button>
       </div>
@@ -224,6 +224,7 @@
             alt="Cinque Terre" width="100%" height="auto">
     
             </a>
+            
          <div class="desc">
     
             <p>JavaScript Project</p>
@@ -266,7 +267,7 @@
         </a>
      <div class="desc">
     
-        <p>Angularjs Project</p>
+        <p>Angular Project</p>
         <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
       
       </div>
@@ -286,7 +287,7 @@
             </a>
          <div class="desc">
     
-            <p>Angularjs Project</p>
+            <p>Angular Project</p>
             <b><a class="projectLink" target="_blank" href="#home">LEARN MORE</a></b>
           
           </div>
@@ -478,7 +479,7 @@
     <p><i class="fa fa-phone fa-fw formxxlarge formMarginRight"></i> Phone: 07030786761</p>
     <p><i class="fa fa-envelope fa-fw formxxlarge formMarginRight"> </i> Email: Oyekanmijelili@gmail.com</p>
     <br>
-    </div>
+    </div><br><br>
     
   <!--<form method="get" action="/forms">
       <label>Enter Your Name</label><br>
@@ -489,11 +490,12 @@
 
     
     <form method="POST" action="/form" id="myForm" autocomplete="on"   target="_blank">
+      <label class="firstLabel">Email:</label>
       <p><input class="formInput formBorder" type="email"  placeholder="Email" required name="email"  id="email"></p>
+      <label>Name:</label>
       <p><input class="formInput formBorder" type="text"  placeholder="Name" required name="name"  id="subject"></p>
-      <p><textarea  class="formInput formBorder" type="text" 
-        placeholder="Your Message" required  name="text" id="text" cols="30" rows="10">
-      </textarea></p>
+      <label>Message:</label>
+      <p><textarea  class="formInput formBorder" type="text" placeholder="Message" required  name="text" id="text" cols="30" rows="10"></textarea></p>
       <p>
         <button class="formButton formBlack" type="submit" value="Submit" id="submitForm">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE           
@@ -514,14 +516,13 @@
 <footer class="footerCenter footerBlack footerPadding">
   <a href="#home" class="footerButton footerGrey hidden fade-in-element"><i class="fa fa-arrow-up footerRight"></i>To the top</a>
   <div class="footerLarge footerSection">
-    <i class="fa fa-facebook-official footerOpacity"></i>
-    <i class="fa fa-instagram footerOpacity"></i>
-    <i class="fa fa-snapchat footerOpacity"></i>
-    <i class="fa fa-pinterest-p footerOpacity"></i>
-    <i class="fa fa-twitter footerOpacity"></i>
-    <i class="fa fa-linkedin footerOpacity"></i>
+    <a href="https://github.com/" target="_self"><i class="fa fa-github footerOpacity"></i></a>
+    <a href="https://www.linkedin.com/in/oyekanmi-jelili-oyetunji-6ab888108/" target="_self"><i class="fa fa-linkedin footerOpacity"></i></a>
+    <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i class="fa fa-facebook-official footerOpacity"></i></a>
+    <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="fa fa-instagram footerOpacity"></i></a>
+    <a href="https://www.twitter.com"><i class="fa fa-twitter footerOpacity" target="_self"></i></a>
   </div>
-  <p>Powered by <a href="#home" title="W3.CSS" target="_blank" class="footerGreen">Jelil Info</a></p>
+  <p>Powered by <a href="#home" title="jelil-info" target="_blank" class="footerGreen">Jelil Info</a></p>
 </footer>
 
 <!--<div class="fade-in-element hidden">
