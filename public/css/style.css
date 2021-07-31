@@ -232,7 +232,7 @@ ul.topnav li a.active {
 
 
 
-ul.topnav li span.myIcon {
+  a.myIcon {
   
   
   display: block;
@@ -241,10 +241,11 @@ ul.topnav li span.myIcon {
   padding: 14px 16px;
   font-family: 'Aguafina Script', cursive;
   font-size: 20px;
+  text-decoration: none;
   }
 
-  ul.topnav li span.myIcon:hover:not(.active) {
-  color: #ff6666;;
+   a.myIcon:hover:not(.active) {
+  color: #ff6666;
 }
 
 
@@ -264,17 +265,18 @@ nav.hide-nav {
   z-index: 1;
 }
 
-div.myIcon2 {
+a.myIcon2 {
   display: block;
   color:  #ff9999;
   
   padding: 14px 16px;
   font-family: 'Aguafina Script', cursive;
   font-size: 20px;
+  text-decoration: none;
   }
 
   
-div.myIcon2:hover:not(.active) {
+a.myIcon2:hover:not(.active) {
   color: #ff6666;
 }
 
@@ -903,15 +905,15 @@ opacity: .6;
   display: block;
 }
 
-#myBtnContainer {
+/*#myBtnContainer {
   
   
   
-  /*padding: 15px;
+  padding: 15px;
   border: 5px solid red;
-  background-color: green;*/
+  background-color: green;
 
-}
+}*/
 
 /* Style the buttons */
 .btn {
@@ -1464,6 +1466,21 @@ i .fa {
 #myBtn:hover {
   background-color:#ff6666;
   }
+
+  .footerLast:link {
+    color:red
+}
+.footerLast:visited {
+  color:green
+}
+.footerLast:hover {
+  color:hotpink
+}
+.footerLast:active {
+  color:blue
+}
+
+
 
 
  
