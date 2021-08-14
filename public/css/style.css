@@ -219,7 +219,7 @@ ul.topnav li a:visited {
 
 /* Change color on hover */
 ul.topnav li a:hover:not(.active) {
-  background-color:  #ff6666;;
+  background-color:  #ff6666;
 }
 
 ul.topnav li a.active {
@@ -534,7 +534,7 @@ opacity: .6;
 
   .briefMePic {
     border: 1px solid #ccc;
-    background-color: #ff6666;
+    background-color:  #ffe6e6;
     font-weight: bold;
   }
 
@@ -547,7 +547,6 @@ opacity: .6;
     padding: 15px;
     text-align: center;
     line-height: 20px;
-    background-color: #ff6666;
   }
 
   .briefMeText p a
@@ -558,12 +557,12 @@ opacity: .6;
 
   .briefMeText p a.myProfile:link, .briefMeText p a.myProfile:visited
   {
-    background-color: #ff9999;
-    color: white;
+    /*background-color: #ff9999;*/
+    color:  #009999;
     /*border: 2px solid green;*/
     /*padding: 10px 20px;*/
     /*text-align: center;*/
-    text-decoration: none;
+    text-decoration: underline;
     /*display: inline-block;*/
 }
 
@@ -1468,16 +1467,16 @@ i .fa {
   }
 
   .footerLast:link {
-    color:red
+    color:#009999;
 }
 .footerLast:visited {
-  color:green
+  color:#009999;
 }
 .footerLast:hover {
-  color:hotpink
+  color:#ff6666;
 }
 .footerLast:active {
-  color:blue
+  color:#ff9999;
 }
 
 
