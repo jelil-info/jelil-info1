@@ -47,6 +47,28 @@
   color: white;
 }
 
+input {
+  display: none;
+}
+
+section > div {
+  display: none;
+}
+
+#radio-section-0:checked ~ #section-0 > div {
+  display: block;
+}
+
+#radio-section-1:checked ~ #section-1 > div {
+  display: block;
+}
+
+#radio-section-2:checked ~ #section-2 > div {
+  display: block;
+}
+
+
+
 </style>
 </head>
 
@@ -55,13 +77,34 @@
 <body>
   
      <div id="CV">
-           
-       
-       
-    
-      <button id = "btn_download" class="btn_download2">Click on me to download Jelil-Info's Resume</button>
+     <button id = "btn_download" class="btn_download2">Click on me to download Jelil-Info's Resume</button>
+     </div>
 
-    </div>
+<input type="radio" name="section" id="radio-section-0" checked />
+<input type="radio" name="section" id="radio-section-1" />
+<input type="radio" name="section" id="radio-section-2" />
+
+<section id="section-0">
+  <h2><label for="radio-section-0">Introduction</label></h2>
+  <div>
+    Content for the introduction.
+  </div>
+</section>
+<section id="section-1">
+  <h2><label for="radio-section-1">Previous Experience</label></h2>
+  <div>
+    Content for the Previous Experiences.
+  </div>
+</section>
+<section id="section-2">
+  <h2><label for="radio-section-2">Side Projects</label></h2>
+  <div>
+    Content for the side projects.
+  </div>
+</section>
+
+
+
     
       <script>//CODES FOR DOWNLOADING FROM SERVER 
     document.getElementById("btn_download").addEventListener("click", function() {
