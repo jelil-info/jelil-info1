@@ -59,6 +59,26 @@ html {
     display: block;
   }
   
+  #radio-section-3:checked ~ #section-3 > div {
+    display: block;
+  }
+  
+  #radio-section-4:checked ~ #section-4 > div {
+    display: block;
+  }
+
+  #radio-section-5:checked ~ #section-5 > div {
+    display: block;
+  }
+
+  #radio-section-6:checked ~ #section-6 > div {
+    display: block;
+  }
+
+  #radio-section-7:checked ~ #section-7 > div {
+    display: block;
+  }
+
   
   
   
@@ -72,7 +92,7 @@ html {
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .left {
-    flex: 50%;
+    flex: 100%;
     /*background-color: #f1f1f1;*/
     padding: 20px;
   }
@@ -90,10 +110,15 @@ html {
     .row, .navbar {   
       flex-direction: row;
     }
+
+    
+
+    
   }
   
   table {
          border-collapse: collapse;
+         table-layout: auto;
          width: 90%;
   }
   
