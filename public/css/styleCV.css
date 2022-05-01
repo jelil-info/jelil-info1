@@ -16,6 +16,13 @@ body  {
 }
 
 
+@media print {
+  @page {
+    size: A4;
+  }
+}
+
+
 @media screen and (max-width: 700px) {
   .row, .navbar {   
     flex-direction: row;
@@ -181,6 +188,24 @@ td.skill2 {
 table.skills {
   width: 100%;
   background-color: #f1f1f1;
+}
+
+ol.BuisnessSkills {
+  list-style-type: upper-roman;
+  
+    text-align: left;
+  }
+
+  /*ol.DigitalSkills {
+    list-style-type: upper-roman;
+    padding: 115px;
+    text-align: left;  
+  }*/
+
+  td.BuisnessSkills1 {
+    
+    padding:  40px;
+    
 }
 
 
