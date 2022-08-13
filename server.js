@@ -67,6 +67,12 @@ app.get('/download',function(req,res){
         res.render('myResume');
         
         });
+
+        app.get('/digitalMarketer', (req, res) => {
+    
+          res.render('digitalMarketer');
+          
+          });
     //COdes for message to display after downloading
         
          app.get('/Thanks', (req, res) => {
