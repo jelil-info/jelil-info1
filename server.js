@@ -122,6 +122,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
         var data = process.env.MONGODB_URI;
         /*mongoose.connect(data, { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false });*/
         mongoose.connect(data, err => { if(err) throw err; console.log('connected to MongoDB')});
+        
       
 
 
