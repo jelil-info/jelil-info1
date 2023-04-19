@@ -674,7 +674,7 @@ opacity: .6;
             border-radius: 5px ;
             box-shadow: 2px 0 2px #555;
             background: #ff6666;
-            width: 70%;
+            width: 80%;
         }
 
         .angularjsProgress5 {
@@ -683,7 +683,7 @@ opacity: .6;
             border-radius: 5px ;
             box-shadow: 2px 0 2px #555;
             background: #ff6666;
-            width: 70%;
+            width: 80%;
         }
 
         .bootstrap4Progress6 {
@@ -701,7 +701,7 @@ opacity: .6;
             border-radius: 5px ;
             box-shadow: 2px 0 2px #555;
             background: #ff6666;
-            width: 70%;
+            width: 80%;
         }
 
         .vuejsProgress8 {
@@ -710,7 +710,7 @@ opacity: .6;
             border-radius: 5px ;
             box-shadow: 2px 0 2px #555;
             background: #ff6666;
-            width: 70%;
+            width: 80%;
         }
 
 
@@ -1453,6 +1453,15 @@ i .fa {
   padding: 15px;
   
 }
+
+@media (max-width:450px){
+     
+  .directContact p span {
+    
+    font-size: 12px;
+  }
+
+  }
 
 #more {
   display: none;

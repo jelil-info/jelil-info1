@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.935.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "ejs": "^3.1.8",
     "express": "^4.17.1",
     "formidable": "^1.2.2",
