@@ -49,12 +49,50 @@ body  {
   
 }
 
-
-
 .btn_download2:hover {
   background-color:  #ff6666;;
   color: white;
 }
+
+
+
+.pagination {
+  display: inline-block;
+  width: 94.4%;
+  padding: 8px 16px;
+  margin-bottom: 14px;
+  margin-left: 6px;
+  border-bottom: 3px solid #DCDCDC;
+  border-top: 3px solid #DCDCDC;
+  
+  
+}
+
+
+a.leftArrowButton {
+  cursor: pointer !important;
+  text-align: left !important;
+  color: white !important;
+  text-align: left !important;
+  text-decoration-line: none !important;
+  background-color: #ff9999 !important;
+  border-radius: 50px !important;
+  padding: 8px 16px;
+  margin-left: -19px;
+  }
+
+
+  a.leftArrowButton:hover {
+    background-color:  #ff6666 !important;
+    
+  }
+  
+
+
+
+
+
+
 
 input {
   display: none;
