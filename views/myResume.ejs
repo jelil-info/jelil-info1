@@ -33,11 +33,38 @@
 
 <body>
      
-     <div class="pagination">
+     <!--<div class="pagination1">
 
        <a class="leftArrowButton" href="https://jelil-info.infotechcrush.com/">&lt;</a>
        
+     </div>-->
+
+
+     <div class="pagination1" style="
+       display: inline-block;
+       width: 94.4%;
+       padding: 8px 16px;
+       margin-bottom: 14px;
+       margin-left: 6px;
+       border-bottom: 3px solid #DCDCDC;
+       border-top: 3px solid #DCDCDC;">
+
+       <a id="gfg"
+       onmouseover="mouseover()"
+       onmouseout="mouseout()"
+       class="leftArrowButton"
+       style="cursor: pointer ;
+       text-align: left ;
+       color: white ;
+       text-decoration: none ;
+       background-color: #ff9999 ;
+       border-radius: 50px ;
+       padding: 8px 16px;
+       margin-left: -19px;"  
+       href="https://jelil-info.infotechcrush.com/">HOME</a>
+       
      </div>
+  
   
      
   
@@ -78,9 +105,9 @@
           <div class="grid-item1">Residential Address: <li style="display: inline;margin-left: 20px;">Ibadan, Oyo State, Nigeria</li></div>
           <div class="grid-item1">Telephone Numbers:  <li style="display: inline;margin-left: 20px;"></b> 07030786761; 08155320855</li></div>  
           <div class="grid-item1">Email Address: <a style="color:#009999;margin-left: 52px;">oyekanmijelili@gmail.com</a></div>
-          <div class="grid-item1">Company Website:<a href="https://infotechcrush.com/" target="_blank" style="color:#009999;margin-left: 36px;">infotechcrush.com</a></div>
-          <div class="grid-item1">Personal Website:<a href="https://jelil-info.infotechcrush.com/" target="_blank" style="color:#009999;margin-left: 36px;">jelil-info.infotechcrush.com</a></div>
-          <div class="grid-item1">Github: <a href="https://github.com/jelil-info" target="_blank" style="color:#009999;margin-left:96px;">github.com/jelil-info</a></div>  
+          <div class="grid-item1">Company Website:<a href="https://infotechcrush.com/" target="_blank" style="margin-left: 36px;">infotechcrush.com</a></div>
+          <div class="grid-item1">Personal Website:<a href="https://jelil-info.infotechcrush.com/" target="_blank" style="margin-left: 36px;">jelil-info.infotechcrush.com</a></div>
+          <div class="grid-item1">Github: <a href="https://github.com/jelil-info" target="_blank" style="margin-left:96px;">github.com/jelil-info</a></div>  
         </div>
         
        </div>
@@ -723,6 +750,14 @@
              //Add this command just after
              //window.open('/download');
            });
+
+           function mouseover() {
+                document.getElementById("gfg").style.backgroundColor = "#ff6666";
+            }
+             
+            function mouseout() {
+                document.getElementById("gfg").style.backgroundColor = "#ff9999";
+            };
            </script>
  </body>        
   
